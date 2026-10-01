@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3126</title>
+    <title>Assignment-01</title>
+    <style>
+        .button {
+            background-color: rgb(153, 153, 153);
+            color: white;
+            padding: 15px 32px;
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 10px;
+        }
+
+        .button--primary {
+            background-color: rgb(45, 145, 172);
+            border: none;
+        }
+
+        .button--secondary {
+            background-color: rgb(191, 191, 191);
+            border: 1.5px solid rgb(101, 101, 101);
+        }
+
+        .button--disabled {
+            background-color: rgb(115, 171, 186);
+            border: none;
+        }
+
+        .button--alert {
+            background-color: rgb(194, 37, 37);
+        }
+
+        .button--alert:hover {
+            border-color: rgb(100, 0, 0);
+            background-color:rgb(141, 0, 0)
+        }
+    </style>
 </head>
 <body>
+    <h2>Primary</h2>
+    <button class="button button--primary">Submit</button>
+
+    <h2>Secondary</h2>
+    <button class="button button--secondary">Cancel</button>
+
+    <h2>Disabled</h2>
+    <button class="button button--disabled">Submit</button>
+
+    <h2>Alert</h2>
+    <button class="button button--alert">Click Me</button>
+
+    <script>
+        const buttonAlert = document.querySelector(".button--alert");
+
+        buttonAlert.addEventListener("click", function() {
+            alert("You clicked the button!");
+        });
+    </script>
     
+
 </body>
 </html>
